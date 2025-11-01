@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+    box-sizing: border-box;
+
+}
+
+header {
+    height: 70vh;
+    background-image: url("images/main.png");
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+
+}
+
+header nav {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    color: white;
+
+}
+
+.btn {
+    padding: 8px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+}
+
+/* ==============================Hero section starts from here================================================= */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100% - 62px);
+    width: 100%;
+    /* gap:20px; */
+}
+
+.main>span:first-child {
+    font-size: 55px;
+    font-weight: 900;
+    color: #f3f1f4;
+    line-height: 55px;
+}
+
+.main>span:nth-child(2) {
+    font-size: 90px;
+    font-weight: 900;
+    color: #f3f1f4;
+}
+
+.main>span:nth-child(3) {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+
+.btn-hero {
+    padding: 10px 20px;
+    border: none;
+    background-color: yellow;
+    color: rgb(43, 43, 200);
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* ======================================OUR SERVICES STARTS FROM HERE========================================= */
+.services {
+    width: 60vw;
+    margin: 50px auto 100px auto;
+}
+
+.services h1 {
+    text-align: center;
+    position: relative;
+    font-size: 38px;
+    color: rgb(64, 106, 64);
+    margin-bottom: 40px;
+}
+
+.services-box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.services h1::after {
+    content: '';
+    width: 150px;
+    height: 5px;
+    background-color: rgb(235, 216, 11);
+    border-radius: 4px;
+    position: absolute;
+    bottom: -7px;
+    right: 43.5%;
+
+}
+
+.services-item {
+    flex-basis: 31.5%;
+    min-width: 250px;
+}
+
+.services-item img {
+    width: 100%;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.services-item img:hover {
+    transform: scale(1.04);
+}
+
+.services-item h3 {
+    color: rgb(64, 106, 64);
+}
+
+.review-container {
+    width: 100%;
+    background-color: #dcd9e4;
+    height: 40vh;
+
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    /* gap:20px; */
+    flex-direction: column;
+    padding: 40px 40px;
+}
+
+
+.review>span:nth-child(2) {
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.container {
+    width: 70vw;
+    margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.in-container {
+    flex-basis: 50%;
+}
+
+.heading {
+    font-size: 25px;
+    color: #565f4c;
+    font-weight: 500;
+    margin: 10px 0 18px 0;
+}
+
+.in-container>span:nth-child(3) {
+    color: #91917c;
+}
+
+.btn-in {
+    margin: 10px 0 10px 0;
+    padding: 10px 15px;
+    background-color: #f4d53a;
+    border-radius: 4px;
+    border: none;
+    color: rgb(43, 43, 200);
+}
+
+.container>.in-container:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+/* ===================================Questions section starts here========================================== */
+
+.questions {
+    height: 60vh;
+    background: url("images/main-2.png") no-repeat center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.questions > h1:first-child{
+    color:#6d6f4c;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.questions > p:nth-child(2){
+    text-align: center;
+    color:#869189;
+}
+
+@media (max-width:800px){
+    .main>span:nth-child(2) {
+        font-size: 50px;
+    }
+    .main>span:first-child {
+        font-size: 30px;
+    }
+    .main{
+        justify-content: start;
+    }
+
+}
